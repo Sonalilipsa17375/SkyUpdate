@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,138 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
+.particles canvas{
+  z-index: -3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* stylesheets/style.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  text-align: center;
+  /* color: bisque; */
+}
+.temp-outer{
+  z-index: 5;
+}
+h1{
+  color: bisque;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  height: 60%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.inputData {
+  width: 100%;
+  margin-bottom: 2rem;
+  /* height: 100%; */
+}
+
+.inputfield {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: black;
+  color: bisque;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.1rem;
+  background: beige;
+  height: 90%;
+  padding: 3% 3%;
+  width: 95%;
+  border-radius: 5% ;
+  border: 2px black ;
+  color: black;
+  overflow: hidden;
+}
+
+.location{
+  font-style: bold;
+  text-transform: capitalize;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: darkgreen;   
+}
+.location span{
+  padding: 0% 1rem;
+  color: #0865d6;
+}
+.errmsg{
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 600;
+  color: red;
+
+}
+.temp span{
+  padding: 0% 1rem;
+  color: rgb(152, 5, 5);
+}
+.temp{
+  color: darkorange;
+
+}
+.tempmin_max{
+  color: rgb(222, 128, 13);
+
+}
+.hum{
+  color: #32012F;
+}
+.pressure{
+  color: #610C9F;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .box {
+      width: 95%;
+  }
+
+  .inputfield {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+
